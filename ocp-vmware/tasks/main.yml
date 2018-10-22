@@ -15,13 +15,13 @@
       datacenter: "{{ vc_datacenter }}"
       name: "{{ vm_name }}-{{ item.stdout }}"
       state: poweredon
-      disk:
-      - size_gb: 60
-        type: thin
-        datastore: "{{ vc_datastore }}"
-      - size_gb: "{{ db_size }}"
-        type: thin
-        datastore: "{{ vc_datastore }}"
+#      disk:
+#      - size_gb: 60
+#        type: thin
+#        datastore: "{{ vc_datastore }}"
+#      - size_gb: "{{ db_size }}"
+#        type: thin
+#        datastore: "{{ vc_datastore }}"
       hardware:
         memory_mb: 16384
         num_cpus: 2
